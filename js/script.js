@@ -97,6 +97,7 @@ console.log(result4);
 var week;
 var total;
 var average;
+var result5;
 
 //Request the five week shopping totals
 week [1] = prompt("Enter amount spent during week 1");
@@ -106,8 +107,13 @@ week [4] = prompt("Enter amount spent during week 4");
 week [5] = prompt("Enter amount spent during week 5");
 
 
-//Calculate the total of the 
-total =
+//Calculate the total of the
+total = week [1] + week [2] + week [3] + week [4] + week [5];
+average = total / 5;
+result5 = "You have spent a total of $" + (total) + " on groceries over 5 weeks. That is an average of $" + (average) + " per week.";
+
+//Display the results
+console.log(result5);
 
 
 
