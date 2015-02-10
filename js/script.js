@@ -5,6 +5,9 @@
 //Activity: Expression Worksheet
 
 
+
+
+
 //Calculate the area of a rectangle
 //Define variables (prompt for input)
 var width;
@@ -45,4 +48,21 @@ var result2 = "Sparky is " + (sparkyAge) + " human years old, which is " + (dogY
 console.log(result2);
 
 
+
+//Slice of Pie part one
+//Assume the person cutting the pizza is precise
+var guests;     //Number of people at the party
+var pizzaOrd;   //Number of pizzas ordered
+var slices;     //Number slices per pizza
+var result3;
+var slicesPer;
+
+//Prompt user for values to each variable
+guests = prompt("How many guests are in your party? ", "6");
+pizzaOrd = prompt("How many pizza's would you like? ", "3");
+slices = prompt("How many slices per pizza would you like? ", "8");
+slicesPer = pizzaOrd * slices / guests;
+result3 = "Each person ate " + (slicesPer) + " slices of pizza at the party.";
+
+//Determine the amount of slices each guest will receive
 
