@@ -61,8 +61,29 @@ var slicesPer;
 guests = prompt("How many guests are in your party? ", "6");
 pizzaOrd = prompt("How many pizza's would you like? ", "3");
 slices = prompt("How many slices per pizza would you like? ", "8");
-slicesPer = pizzaOrd * slices / guests;
-result3 = "Each person ate " + (slicesPer) + " slices of pizza at the party.";
 
 //Determine the amount of slices each guest will receive
+slicesPer = pizzaOrd * slices / guests;
+
+//String to be displayed
+result3 = "Each person ate " + (slicesPer) + " slices of pizza at the party.";
+
+//Output detailing the results of the operation
+console.log(result3);
+
+
+
+//Slice of pie part two
+//Defining variable that will rely on part one values for calculation and Sparky's cut
+var sparkysCut;
+var result4;
+
+
+//Calculate value of sparkysCut and result4
+sparkysCut = pizzaOrd * slices % guests;
+result4 = "Sparky got " + (sparkysCut) + " slices of pizza";
+
+//Display the value of result4 in the console
+console.log(result4);
+
 
