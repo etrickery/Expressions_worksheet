@@ -28,6 +28,7 @@ console.log(resultExample);
 
 
 
+
 //Dog years problem
 //Define variables (prompt for input)
 //dogConstant is a constant that is used to calculate based on 1 human year = 7 dog years
@@ -49,6 +50,7 @@ console.log(result2);
 
 
 
+
 //Slice of Pie part one
 //Assume the person cutting the pizza is precise
 var guests;     //Number of people at the party
@@ -58,8 +60,8 @@ var result3;
 var slicesPer;
 
 //Prompt user for values to each variable
-guests = prompt("How many guests are in your party? ", "6");
-pizzaOrd = prompt("How many pizza's would you like? ", "3");
+guests = prompt("How many guests are in your party? ", "10");
+pizzaOrd = prompt("How many pizza's would you like? ", "4");
 slices = prompt("How many slices per pizza would you like? ", "8");
 
 //Determine the amount of slices each guest will receive
@@ -70,6 +72,7 @@ result3 = "Each person ate " + (slicesPer) + " slices of pizza at the party.";
 
 //Output detailing the results of the operation
 console.log(result3);
+
 
 
 
@@ -85,5 +88,42 @@ result4 = "Sparky got " + (sparkysCut) + " slices of pizza";
 
 //Display the value of result4 in the console
 console.log(result4);
+
+
+
+
+//Average shopping bill
+//Define variables
+var week;
+var total;
+var average;
+
+//Request the five week shopping totals
+week [1] = prompt("Enter amount spent during week 1");
+week [2] = prompt("Enter amount spent during week 2");
+week [3] = prompt("Enter amount spent during week 3");
+week [4] = prompt("Enter amount spent during week 4");
+week [5] = prompt("Enter amount spent during week 5");
+
+
+//Calculate the total of the 
+total =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
