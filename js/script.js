@@ -100,11 +100,11 @@ var average;
 var result5;
 
 //Request the five week shopping totals
-week[0] = prompt("Enter amount spent during week 1", 10);
-week[1] = prompt("Enter amount spent during week 2", 10);
-week[2] = prompt("Enter amount spent during week 3", 10);
-week[3] = prompt("Enter amount spent during week 4", 10);
-week[4] = prompt("Enter amount spent during week 5", 10);
+week[0] = prompt("Enter amount spent during week 1", "10");
+week[1] = prompt("Enter amount spent during week 2", "10");
+week[2] = prompt("Enter amount spent during week 3", "10");
+week[3] = prompt("Enter amount spent during week 4", "10");
+week[4] = prompt("Enter amount spent during week 5", "10");
 
 
 //Calculate the total of the
@@ -119,7 +119,35 @@ console.log(result5);
 
 
 
+/*
+ Discounts
 
+ Calculate the discounted price for an item. Create an expression that will calculate the discounted price with and
+ without sales tax. (It is acceptable for the result to have more than two digits after the decimal. $345.896 for
+ example.)
+ */
+
+var price;
+var discount;
+var item;
+var salesTax;
+var total;
+var totalWithTax;
+var result6;
+
+//Request the values for defined variables
+price = prompt("Enter the price of the item: ", "100000");
+discount = prompt("Enter the discount (out of 100): ", "20");
+item = prompt("Enter a description of the item: ", "Ferarri");
+salesTax = prompt("Enter the sales tax: ", "7");
+
+//Calculations are now performed
+total = Number(price) - (Number(price) * (Number(discount)/100));        //Calculate the discounted price of the item
+totalWithTax = total + (total * (Number(salesTax)/100))               //Calculate the total including tax
+result6 = 'Your ' + (item) + ' was originally $' + (price) + ', but after a ' + (discount) + ' discount, it is now $' + (total) + ' without tax, and $' + (totalWithTax) + ' with tax.';
+
+//Display the output of result6 in the console log
+console.log(result6);
 
 
 
