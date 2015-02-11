@@ -21,7 +21,7 @@ height = prompt("Enter the height of the rectangle: ", "15");
 
 //Multiply the width x height to determine area and build the result statement
 area = width * height;
-resultExample = "The area of a rectangle who's width equals " + (width) + " and height equals " + (height) + ", will have an area of " + (area) + ".";
+resultExample = "A rectangle with a width equal to " + (width) + " and height equal to " + (height) + " will have an area of " + (area) + ".";
 
 //Display the results in the console
 console.log(resultExample);
@@ -94,21 +94,21 @@ console.log(result4);
 
 //Average shopping bill
 //Define variables
-var week;
+var week = [0, 1, 2, 3, 4];
 var total;
 var average;
 var result5;
 
 //Request the five week shopping totals
-week [1] = prompt("Enter amount spent during week 1");
-week [2] = prompt("Enter amount spent during week 2");
-week [3] = prompt("Enter amount spent during week 3");
-week [4] = prompt("Enter amount spent during week 4");
-week [5] = prompt("Enter amount spent during week 5");
+week[0] = prompt("Enter amount spent during week 1", 10);
+week[1] = prompt("Enter amount spent during week 2", 10);
+week[2] = prompt("Enter amount spent during week 3", 10);
+week[3] = prompt("Enter amount spent during week 4", 10);
+week[4] = prompt("Enter amount spent during week 5", 10);
 
 
 //Calculate the total of the
-total = week [1] + week [2] + week [3] + week [4] + week [5];
+total = Number(week[0]) + Number(week[1]) + Number(week[2]) + Number(week[3]) + Number(week[4]);
 average = total / 5;
 result5 = "You have spent a total of $" + (total) + " on groceries over 5 weeks. That is an average of $" + (average) + " per week.";
 
