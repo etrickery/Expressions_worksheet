@@ -10,17 +10,17 @@
 
 //Calculate the area of a rectangle
 //Define variables (prompt for input)
-var width;
-var height;
-var area;
-var resultExample;
+var width;                  //width of rectangle
+var height;                 //height of rectangle
+var area;                   //area of rectangle
+var resultExample;          //Concatenated results of this problem
 
 //Request user prompts for rectangle size
-width = prompt("Enter the width of the rectangle: ", "20");
-height = prompt("Enter the height of the rectangle: ", "15");
+width = prompt("Enter the width of the rectangle: ", "20");         //Prompt user for width
+height = prompt("Enter the height of the rectangle: ", "15");       //Prompt user for height
 
 //Multiply the width x height to determine area and build the result statement
-area = width * height;
+area = width * height;      //Determine area to build result (which is next line)
 resultExample = "A rectangle with a width equal to " + (width) + " and height equal to " + (height) + " will have an area of " + (area) + ".";
 
 //Display the results in the console
@@ -60,9 +60,9 @@ var result3;
 var slicesPer;
 
 //Prompt user for values to each variable
-guests = prompt("How many guests are in your party? ", "10");
-pizzaOrd = prompt("How many pizza's would you like? ", "4");
-slices = prompt("How many slices per pizza would you like? ", "8");
+guests = prompt("How many guests are in your party? ", "10");           //Prompt for number of guests
+pizzaOrd = prompt("How many pizza's would you like? ", "4");            //Prompt for number of pizzas
+slices = prompt("How many slices per pizza would you like? ", "8");     //Prompt for slices per pizza
 
 //Determine the amount of slices each guest will receive
 slicesPer = pizzaOrd * slices / guests;
@@ -78,7 +78,7 @@ console.log(result3);
 
 //Slice of pie part two
 //Defining variable that will rely on part one values for calculation and Sparky's cut
-var sparkysCut;
+var sparkysCut;     //How many slices that Sparky will get (the remainder)
 var result4;
 
 
@@ -94,22 +94,22 @@ console.log(result4);
 
 //Average shopping bill
 //Define variables
-var week = [0, 1, 2, 3, 4];
-var total;
-var average;
-var result5;
+var week = [0, 1, 2, 3, 4];         //Array that will contain the amounts spent from each week
+var total;                          //Total of each entry within that array
+var average;                        //Average spent per week
+var result5;                        //Concatenated results from this formula
 
 //Request the five week shopping totals
-week[0] = prompt("Enter amount spent during week 1", "10");
+week[0] = prompt("Enter amount spent during week 1", "10");     //Prompt user for each week, and insert value in array
 week[1] = prompt("Enter amount spent during week 2", "10");
 week[2] = prompt("Enter amount spent during week 3", "10");
 week[3] = prompt("Enter amount spent during week 4", "10");
 week[4] = prompt("Enter amount spent during week 5", "10");
 
 
-//Calculate the total of the
-total = Number(week[0]) + Number(week[1]) + Number(week[2]) + Number(week[3]) + Number(week[4]);
-average = total / 5;
+//Calculate the total of the array values
+total = Number(week[0]) + Number(week[1]) + Number(week[2]) + Number(week[3]) + Number(week[4]);        //Adding the values together
+average = total / 5;  //Calculate the average spent each week
 result5 = "You have spent a total of $" + (total) + " on groceries over 5 weeks. That is an average of $" + (average) + " per week.";
 
 //Display the results
@@ -136,8 +136,8 @@ var totalWithTax;
 var result6;
 
 //Request the values for defined variables
-price = prompt("Enter the price of the item: ", "100000");
-discount = prompt("Enter the discount (out of 100): ", "20");
+price = prompt("Enter the price of the item: ", "100000");      //Prompt the user for each user generated value
+discount = prompt("Enter the discount (out of 100): ", "20");   //Store each value in respective variable
 item = prompt("Enter a description of the item: ", "Ferarri");
 salesTax = prompt("Enter the sales tax: ", "7");
 
